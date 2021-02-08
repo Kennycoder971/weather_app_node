@@ -1,5 +1,5 @@
 const fetchWeather = (address, cb) => {
-    const url = `http://localhost:3000/weather?address=${address}`
+    const url = `/weather?address=${address}`
 
     fetch(url)
         .then(data => data.json())
